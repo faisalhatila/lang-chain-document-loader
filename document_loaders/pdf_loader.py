@@ -1,7 +1,7 @@
 from pathlib import Path
 from langchain_community.document_loaders import PyPDFLoader
 
-file_path = Path(__file__).parent / "dl-curriculum.pdf"
+file_path = Path(__file__).parent.parent / "resources/dl-curriculum.pdf"
 
 loader = PyPDFLoader(file_path=file_path)
 
