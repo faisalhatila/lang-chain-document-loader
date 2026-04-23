@@ -22,7 +22,7 @@ prompt = PromptTemplate(
 
 parser = StrOutputParser()
 
-file_path = Path(__file__).parent / "cricket.txt"
+file_path = Path(__file__).parent.parent / "resources/cricket.txt"
 
 loader = TextLoader(file_path=file_path, encoding='utf-8')
 
