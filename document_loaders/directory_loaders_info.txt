@@ -1,0 +1,11 @@
+Directory loader is a document loader that lets you load multiple documents from a directory (folder) of files.
+
+
+Glob Pattern.                       What it Loades
+"**/*.txt"                          All .txt files in all the subfolders
+"*.pdf".                            All .pdf files in the root directory
+"data/*.csv"                        All .csv files in the data/ directory
+"**/*".                             All files (any type, all folders)
+
+
+We have noticed that loading all pdfs in directory take lot of time. To improve the issue we have lazyload in langchain
