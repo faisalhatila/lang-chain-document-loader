@@ -9,3 +9,13 @@ Glob Pattern.                       What it Loades
 
 
 We have noticed that loading all pdfs in directory take lot of time. To improve the issue we have lazyload in langchain
+
+Here is the difference between load() and lazy_load()
+
+load()                                            What it Loades
+Eager Loading (loads everything at once).         Lazy Loading (loads on demand)
+Returns: A list of Document objects.              Returns: A generator of Document objects.
+Loads all documents immediately into memory.      Documents are not all loaded at once; they're fetched one at a time as needed
+Best when:                                        Best when
+    * The number of ducuments is small                * You are dealing with large documents or lots of files.
+    * You want everything loaded upfront              * You want to stream processing (eg. chunking, embedding) without using lots of memory
