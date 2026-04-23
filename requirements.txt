@@ -9,6 +9,9 @@ openai
 # Langchain Classic
 langchain-classic
 
+# Langchain Community
+langchain-community
+
 # Anthropic Integration
 langchain-anthropic
 
