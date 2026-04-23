@@ -1,0 +1,9 @@
+we have used pypdf loader in our pdf_load.py. But it doesn't work great in all cases. For example if some pdf based on images, the library doesn't work great there. So we have some other libraries which are as follows
+
+
+Use Case.                           Recommded Loader
+Simple, clean pdf                   PyPDFLoader
+PDFs with tables/columns            PDFPlumberLoader
+Scanned/images PDFs                 UnstructuredPDFLoader or AmazonTextractPDFLoader
+Need layout and image data          PyMuPDFLoader
+Want best structure extraction      UnstructuredPDFLoader

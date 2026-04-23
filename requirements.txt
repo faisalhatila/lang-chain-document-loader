@@ -12,6 +12,10 @@ langchain-classic
 # Langchain Community
 langchain-community
 
+# Py PDF
+pypdf
+
+
 # Anthropic Integration
 langchain-anthropic
 
